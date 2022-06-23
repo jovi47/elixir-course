@@ -40,3 +40,9 @@ config :phoenix, :json_library, Jason
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"
+
+config :ex_mon_api, ExMonApiWeb.Auth.Guardian,
+       issuer: "ex_mon_api",
+       secret_key: "NAmqxDWTBL/KGTJU1yJVZWvXxivknzMviGht2ffo6y6WoH5KWFhODSUae6OdQ0Ex"
+
+config :ex_mon_api, ExMonApiWeb.Auth.Pipeline, module: ExMonApiWeb.Auth.Guardian, error_handler: ExMonApiWeb.Auth.ErrorHandler
