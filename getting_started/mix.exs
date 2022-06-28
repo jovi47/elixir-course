@@ -1,9 +1,9 @@
-defmodule Doc.MixProject do
+defmodule GettingStarted.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :doc,
+      app: :getting_started,
       version: "0.1.0",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,

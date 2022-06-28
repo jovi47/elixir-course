@@ -1,6 +1,6 @@
-defmodule Doc do
+defmodule GettingStarted do
   @moduledoc """
-  Documentation for `Doc`.
+  Documentation for `GettingStarted`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Doc do
 
   ## Examples
 
-      iex> Doc.hello()
+      iex> GettingStarted.hello()
       :world
 
   """

@@ -1,4 +1,4 @@
-defmodule FooModuleAcumulator do
+defmodule ModuleAttributes.FooModuleAcumulator do
   #this will accumulate the param into [:bar, :foo] lol
   Module.register_attribute __MODULE__, :param, accumulate: true
   @param :foo

@@ -10,16 +10,6 @@ defmodule TryCatchRescue.SampleTest do
     end
   end
 
-  def without_even_trying do
-    try do
-      raise "oops"
-    rescue
-      e -> raise "some thing ocurred #{inspect e}"
-    after
-      IO.puts "cleaning up!"
-    end
-  end
-
   def else_sample(x) do
     try do
       1 / x

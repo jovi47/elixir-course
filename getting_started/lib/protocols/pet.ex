@@ -1,3 +1,3 @@
-defmodule Protocols.Pet do
+defmodule Protocol.Pet do
   defstruct [:type, :name, :age]
 end

@@ -1,4 +1,4 @@
-defmodule Car do
+defmodule Structs.Car do
    @enforce_keys [:make]
    defstruct [:model, :make]
  end
